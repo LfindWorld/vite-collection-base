@@ -4,8 +4,11 @@ module.exports = {
     es2021: true
   },
   extends: [
-    'plugin:vue/essential',
-    'standard'
+    // 'plugin:vue/essential',
+    // 'standard'
+    'plugin:vue/vue3-essential',
+    '@vue/standard',
+    '@vue/typescript/recommended'
   ],
   parserOptions: {
     ecmaVersion: 12,
