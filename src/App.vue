@@ -10,7 +10,7 @@ let lidapang = {
     b: 0
   }
 };
-console.log(lidapang?.a?.b);
+console.log(lidapang?.a?.b)
 export default {
 
 }
