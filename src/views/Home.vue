@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="@/assets/images/but.jpg">
+    <img class="img" alt="Vue logo" src="@/assets/images/but.jpg">
     <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <router-link to="/"><el-button>Go to Home</el-button></router-link>
      <el-row>
       <el-button>默认按钮</el-button>
       <el-button type="primary">主要按钮</el-button>
@@ -27,3 +28,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="scss" scoped>
+  .img {
+    width: 320px;
+  }
+</style>
