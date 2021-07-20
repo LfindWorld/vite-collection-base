@@ -9,7 +9,8 @@ import {
   // 组件，按需加载使用
   ElButton,
   ElSelect,
-  ElRow
+  ElRow,
+  ElOption
 } from 'element-plus'
 export const ElementPlugins = [
   // ElInfiniteScroll,
@@ -21,5 +22,6 @@ export const ElementPlugins = [
 export const ElementComponents = [
   ElButton,
   ElSelect,
-  ElRow
+  ElRow,
+  ElOption
 ]
