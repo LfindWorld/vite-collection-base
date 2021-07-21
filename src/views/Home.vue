@@ -31,9 +31,6 @@ export default defineComponent({
     return {
       ...add()
     }
-  },
-  mounted () {
-    console.log(this.$store.state)
   }
 })
 </script>
