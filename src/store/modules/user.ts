@@ -1,16 +1,24 @@
-
-export interface UserState {
+import { Commit } from 'vuex'
+export interface UserModuleTypes {
   count: number
 }
-const user = {
-  state: {
-    count: 0
-  },
-  mutations: {
-    addCount: (state: UserState): void => {
-      state.count++
-    }
+const state = {
+  count: 0
+}
+const mutations = {
+  increment: (state: UserModuleTypes): void => {
+    state.count++
+  }
+}
+const actions = {
+  addCount: (context: { commit: Commit }): void => {
+    context.commit('increment')
   }
 }
 
-export default user
+export default {
+  namespaced: true,
+  state,
+  mutations,
+  actions
+}

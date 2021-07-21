@@ -13,5 +13,6 @@ ElementPlugins.forEach(plugin => {
   app.use(plugin)
 })
 app.use(router)
+
 app.use(store, key)
 app.mount('#app')
