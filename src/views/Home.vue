@@ -9,9 +9,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, onMounted, ref } from 'vue'
+import { defineComponent, ref } from 'vue'
 import HelloWorld from '@/components/HelloWorld.vue'
-import { useStore } from '@/store'
 
 function add () {
   const count = ref(0)
