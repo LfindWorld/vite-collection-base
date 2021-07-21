@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "precommit":"lint-staged"
   },
   "husky":{
     "hooks":{
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run precommit"
     }
   },
   "lint-staged": {
